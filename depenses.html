@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+    />
+    <title>GESTION DU BUDGET</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="logo" />
+        </a>
+        <span>Gestion du budget</span>
+      </div>
+    </header>
+
+    <div class="form">
+      <h3>AJOUTER DEPENSE</h3>
+      <br /><br />
+      <form id="formDepense">
+        <!-- TITRE -->
+        <label for="titre">TITRE</label> <br />
+        <input
+          type="text"
+          id="inputTitreDepense"
+          placeholder="Entrer le titre"
+          aria-label="Titre de la dépense"
+        />
+        <br /><br />
+        <span class="error" id="TitreDepenseError"></span>
+        <br /><br />
+
+        <!-- MONTANT -->
+        <label for="montant">MONTANT</label> <br />
+        <input
+          type="number"
+          id="inputMontantDepense"
+          placeholder="Entrer le montant"
+          aria-label="Montant de la dépense"
+        />
+        <br />
+        <br />
+        <span class="error" id="MontantDepenseError"></span>
+
+        <br /><br />
+        <button type="submit" id="btnAjoutDepense">VALIDER</button>
+      </form>
+    </div>
+
+    <script src="depenses.js"></script>
+  </body>
+</html>

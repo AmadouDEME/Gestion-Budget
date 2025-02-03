@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gestion du Budget: Suivi des revenus et dépenses"
+    />
+    <title>GESTION DU BUDGET</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Logo de Gestion du Budget" />
+        <span>Gestion du budget</span>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="container1">
+        <div class="budget">
+          <table>
+            <thead>
+              <tr>
+                <th>Budget</th>
+              </tr>
+            </thead>
+            <tbody id="budget">
+              <tr>
+                <td>0.00 FCFA</td>
+                <!-- Valeur par défaut -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="totalDepenses">
+          <table>
+            <thead>
+              <tr>
+                <th>Dépenses</th>
+              </tr>
+            </thead>
+            <tbody id="TotalDepenses">
+              <tr>
+                <td>0.00 FCFA</td>
+                <!-- Valeur par défaut -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="solde">
+          <table>
+            <thead>
+              <tr>
+                <th>Solde</th>
+              </tr>
+            </thead>
+            <tbody id="solde">
+              <tr>
+                <td>0.00 FCFA</td>
+                <!-- Valeur par défaut -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="container2">
+        <h2>Listes des dépenses</h2>
+        <table border="1" class="list-depense">
+          <thead>
+            <tr>
+              <th>TITRE</th>
+              <th>MONTANT</th>
+              <th>ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody id="list-depense">
+            <!-- tableDepense -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container3">
+        <h2>Listes des revenus</h2>
+        <table border="1" class="list-revenus">
+          <thead>
+            <tr>
+              <th>TITRE</th>
+              <th>MONTANT</th>
+              <th>ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody id="list-revenus">
+            <!-- tableRevenu -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

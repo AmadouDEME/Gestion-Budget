@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+    />
+    <title>GESTION DU BUDGET</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="logo" />
+        </a>
+        <span>Gestion du budget</span>
+      </div>
+    </header>
+    <div class="form">
+      <h3>AJOUTER REVENU</h3>
+      <br /><br />
+      <form id="formRevenu">
+        <!-- TITRE -->
+        <label for="inputTitreRevenu">TITRE</label> <br />
+        <input
+          type="text"
+          value=""
+          id="inputTitreRevenu"
+          placeholder="Entrer le titre"
+        /><br />
+        <br />
+        <span class="error" id="TitreRevenuError"></span>
+        <br /><br />
+        <!-- MONTANT -->
+        <label for="inputMontantRevenu">MONTANT</label> <br />
+        <input
+          type="number"
+          value=""
+          id="inputMontantRevenu"
+          placeholder="Entrer le montant"
+        />
+        <br /><br />
+        <span class="error" id="MontantRevenuError"></span>
+      </form>
+      <br />
+
+      <button type="submit" id="btnAjoutRevenus">VALIDER</button>
+    </div>
+    <script src="revenus.js"></script>
+  </body>
+</html>
